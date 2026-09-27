@@ -1,0 +1,20 @@
+# Publishes server.json to the official MCP Registry
+# (registry.modelcontextprotocol.io) using GitHub OIDC for the
+# io.github.Humanleap/* namespace. Run on demand or when server.json changes.
+name: Publish to MCP Registry
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [server.json]
+permissions:
+  id-token: write
+  contents: read
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: curl -fsSL "https://github.com/modelcontextprotocol/registry/releases/latest/download/mcp-publisher_linux_amd64.tar.gz" | tar xz mcp-publisher
+      - run: ./mcp-publisher login github-oidc
+      - run: ./mcp-publisher publish
