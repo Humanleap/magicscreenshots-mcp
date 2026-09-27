@@ -1,0 +1,11 @@
+{
+  "name": "magicscreenshots",
+  "displayName": "MagicScreenshots",
+  "version": "0.3.0",
+  "description": "Search real App Store screenshots and preview videos from top apps, then generate and localize your own.",
+  "author": { "name": "Humanleap", "email": "support@humanleap.com", "url": "https://www.magicscreenshots.com" },
+  "homepage": "https://www.magicscreenshots.com/agents",
+  "repository": "https://github.com/Humanleap/magicscreenshots-mcp",
+  "license": "MIT",
+  "keywords": ["app-store", "screenshots", "aso", "design-inspiration", "mcp"]
+}

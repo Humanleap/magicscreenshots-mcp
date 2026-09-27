@@ -1,0 +1,10 @@
+{
+  "name": "magicscreenshots",
+  "version": "0.3.0",
+  "description": "Search real App Store screenshots and preview videos from top apps, then generate and localize your own.",
+  "mcpServers": {
+    "magicscreenshots": {
+      "httpUrl": "https://www.magicscreenshots.com/api/mcp"
+    }
+  }
+}

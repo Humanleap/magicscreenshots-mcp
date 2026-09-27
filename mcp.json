@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "magicscreenshots": {
+      "url": "https://www.magicscreenshots.com/api/mcp",
+      "headers": {
+        "Authorization": "Bearer ${env:MAGICSCREENSHOTS_API_KEY}"
+      }
+    }
+  }
+}

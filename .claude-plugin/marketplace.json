@@ -1,0 +1,12 @@
+{
+  "name": "magicscreenshots",
+  "description": "MagicScreenshots: the App Store screenshot library for agents.",
+  "owner": { "name": "Humanleap", "email": "support@humanleap.com" },
+  "plugins": [
+    {
+      "name": "magicscreenshots",
+      "source": "./",
+      "description": "Search real App Store screenshots and preview videos from top apps, then generate and localize your own."
+    }
+  ]
+}
